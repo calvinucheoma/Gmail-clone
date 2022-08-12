@@ -1,0 +1,47 @@
+.emailList{
+    flex: 1;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.emailList::-webkit-scrollbar {
+    display: none;
+}
+
+.emailListSettings{
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid whitesmoke;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.emailListSections{
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid whitesmoke;
+    z-index: 999;
+}
+
+.emailListRow {
+    padding-bottom: 20%;
+}
+
+@media (max-width: 720px) {
+    .emailListIcon {
+        margin-left: -8px !important;
+        font-size: 15px !important;
+    }
+
+    .emailListIcon > .MuiSvgIcon-root {
+        height: 15px !important;
+    }
+
+}

@@ -1,0 +1,89 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+}
+
+.headerLeft > img {
+    object-fit: contain;
+    height: 80px;
+    margin-left: 5px;
+}
+
+.headerMiddle{
+    display: flex;
+    align-items: center;
+    flex: 0.7;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.headerMiddle > input{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    font-size: medium;
+}
+
+.headerMiddle > .MuiSvgIcon-root {
+    color: grey;
+}
+
+.headerRight{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.headerAvatar{
+    cursor: pointer !important;
+}
+
+@media (max-width: 720px) {
+    .headerLeft{
+        padding-right: -5px;
+    }
+
+    .headerLeft > img {
+        height: 30px;
+        margin-left: -5px;
+    }
+
+    .headerIconButton{
+        height: 15px !important;
+        margin-left: -7px;
+    }
+
+    .headerMiddle {
+        padding: 5px;
+        flex: 0.75;
+    }
+
+    .headerMiddle > .MuiSvgIcon-root {
+        height: 15px !important;
+    }
+
+    .headerMiddle > input {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .headerRight {
+        padding-right: 10px;
+    }
+
+    .headerAvatar {
+        height: 25px !important;
+        width: 25px !important;
+    }
+
+};

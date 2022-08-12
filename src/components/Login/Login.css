@@ -1,0 +1,30 @@
+.login{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50vh;
+}
+
+.loginContainer > img {
+    object-fit: contain;
+    height: 200px;
+}
+
+/* @media (max-width: 720px) {
+    .loginContainer > img {
+        width: 80vw;
+    }
+
+    .loginButton {
+        font-size: 12px !important;
+        width: 80vw !important;
+    }
+} */

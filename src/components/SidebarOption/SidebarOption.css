@@ -1,0 +1,67 @@
+.sidebarOption{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #818181;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sidebarOption > p {
+    display: none;
+    font-weight: 300;
+}
+
+.sidebarOption > h3 {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sidebarOption > .MuiSvgIcon-root {
+    margin: 5px;
+}
+
+.sidebarOption:hover > p {
+    display: inline;
+}
+
+.sidebarOption:hover,
+.sidebarOption:hover > p,
+.sidebarOption:hover > h3,
+.sidebarOptionActive,
+.sidebarOptionActive > p,
+.sidebarOptionActive > h3 {
+    background-color: #fcecec;
+    color: #c04b37;
+    font-weight: 800 !important;
+}
+
+.sidebarOptionActive > p {
+    display: inline !important;
+}
+
+@media (max-width: 720px) {
+    .sidebarOption {
+        height: 20px;
+        padding: 0 5px;
+        margin-bottom: 15px;
+    }
+
+    .sidebarOption > p {
+        font-size: 7px;
+    }
+
+    .sidebarOption > h3 {
+        font-size: 9px;
+        margin-left: -5px;
+    }
+
+    .sidebarOption > .MuiSvgIcon-root {
+        margin: 1px;
+        height: 15px !important;
+    }
+}

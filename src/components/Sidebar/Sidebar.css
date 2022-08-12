@@ -1,0 +1,41 @@
+.sidebar{
+    flex: 0.3;
+    max-width: 300px;
+    padding-right: 20px;
+}
+
+.sidebarCompose{
+    margin-top: 15px !important;
+    margin-left: 10px !important;
+    margin-bottom: 15px !important;
+    text-transform: capitalize !important;
+    color: gray;
+    padding: 15px !important;
+    border-radius: 30px !important;
+    box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
+    color: black !important;
+}
+
+.sidebarFooter{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 720px) {
+    .sidebarCompose{
+        padding: 7px !important;
+        font-size: 10px !important;
+        margin-top: 7px !important;
+    }
+
+    .sidebarAddIcon {
+        font-size: 12px !important;
+        margin-right: -3px !important;
+    }
+
+    .sidebarFooterIcon {
+        height: 15px !important;
+        margin-right: -15px !important;
+        margin-left: -2px !important;
+    }
+}
